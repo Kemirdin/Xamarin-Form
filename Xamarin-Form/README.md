@@ -1,2 +1,3 @@
 # Xamarin.Forms Portfolio-exercises & Hands-on Learning...
 These are all of my portfolios and exercises repositories, I will put all my practice files here.
+I have been watching Xamarin Guy tutorial then exercise by myself.
