@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BeutifulUI"
+             x:Class="BeutifulUI.MainPage"
+             BackgroundColor="White">
+
+<ScrollView>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="AUTO" />
+            </Grid.RowDefinitions>
+
+            <!--  header background  -->
+            <Image Aspect="AspectFill" Source="screen.png" />
+            <Image Aspect="Fill" Source="CurvedMask.png" VerticalOptions="End" />
+
+            <!--  profile image  -->
+            <Image HeightRequest="100" HorizontalOptions="Center" Source="ic_launcher.png" TranslationY="50" VerticalOptions="End" WidthRequest="100" />
+
+            <!--  Profile Name this will b Included  -->
+            <StackLayout Grid.Row="1" Padding="0,50,0,00" HorizontalOptions="Center">
+                <Label HorizontalTextAlignment="Center" Style="{StaticResource ProfileNameLabel}" Text="Signed In" />
+                <Label Margin="0,-5" HorizontalTextAlignment="Center" Style="{StaticResource ProfileTagLabel}" Text="Star Wars Reviews" />
+            </StackLayout>
+
+            <!--  Social Stats Section  -->
+            <Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0" RowSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout>
+                    <StackLayout.Children>
+
+                        <Image Source="http://bbcpersian7.com/images/facebook-clipart-png-circle-14.jpg" HeightRequest="50" WidthRequest="50"></Image>
+
+                    </StackLayout.Children>
+
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="103" />
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Likes" />
+
+
+                </StackLayout>
+
+                <StackLayout Grid.Column="1">
+
+                    <StackLayout.Children>
+                        <Image Source="https://lh3.googleusercontent.com/N-AY2XwXafWq4TQWfua6VyjPVQvTGRdz9CKOHaBl2nu2GVg7zxS886X5giZ9yY2qIjPh=w300" HeightRequest="50" WidthRequest="50"></Image>
+                    </StackLayout.Children>
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="164" />
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Follow Us" />
+
+                </StackLayout>
+
+                <StackLayout Grid.Column="2">
+
+                    <StackLayout.Children>
+                        <Image Source="http://www.movingchurchofgod.org/wp-content/uploads/2015/04/twitter-circle-icon-blue-logo-flat.png" HeightRequest="50" WidthRequest="50"></Image>
+                    </StackLayout.Children>
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="107" />
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Tweet Us" />
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
