@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CheckBox"
+             x:Class="CheckBox.MainPage"
+              xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             BackgroundImage="asdads.jpg"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />-->
+            <Label Text=" Schedule Your Day" HorizontalOptions="Start" FontSize="Large"></Label>
+
+            <controls:CheckBox DefaultText="Chunk Down a Project"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontName="AmericanTypewriter" 
+                               />
+            <controls:CheckBox DefaultText="Research One Side Hustle"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontName="AmericanTypewriter" 
+                               />
+
+            <controls:CheckBox DefaultText="Make One Business Connection"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontName="AmericanTypewriter" 
+                               />
+
+            <controls:CheckBox DefaultText="Review Your Goals"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontName="AmericanTypewriter" 
+                               />
+
+            <!--<controls:CheckBox DefaultText="rack Your Expenses"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="Green"
+                               FontSize="25"
+                               FontName="AmericanTypewriter" 
+                               />
+            <controls:CheckBox DefaultText="Review Your Budget"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="Green"
+                               FontSize="25"
+                               FontName="AmericanTypewriter" 
+                               />
+            <controls:CheckBox DefaultText="Conserve Your Utilities"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="Green"
+                               FontSize="25"
+                               FontName="AmericanTypewriter" 
+                               />
+            <controls:CheckBox DefaultText="Pack a Meal, Snack, and Coffee"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="Green"
+                               FontSize="25"
+                               FontName="AmericanTypewriter" 
+                               />-->
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
