@@ -1,0 +1,5 @@
+<AbsoluteLayout>
+			<local:PanContainer>
+				<Image Source="black.jpg" WidthRequest="1024" HeightRequest="768" />
+			</local:PanContainer>
+		</AbsoluteLayout>
