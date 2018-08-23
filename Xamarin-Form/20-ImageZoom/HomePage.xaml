@@ -1,0 +1,7 @@
+<Grid Padding="20">
+			<local:PinchToZoomContainer>
+				<local:PinchToZoomContainer.Content>
+                    <Image Source="Free.jpg" />
+				</local:PinchToZoomContainer.Content>
+			</local:PinchToZoomContainer>
+		</Grid>
