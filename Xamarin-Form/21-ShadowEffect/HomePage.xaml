@@ -1,0 +1,17 @@
+<Grid Padding="0,20,0,0">
+		
+		<Label Text="Introducing New Black BMW" FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"  FontSize="Large">
+			<Label.Effects>
+				<local:ShadowEffect Radius="5" DistanceX="5" DistanceY="5">
+					<local:ShadowEffect.Color>
+                        <OnPlatform x:TypeArguments="Color">
+                            <On Platform="iOS" Value="Black" />
+                            <On Platform="Android" Value="White" />
+                            <On Platform="UWP" Value="Red" />
+                        </OnPlatform>
+					</local:ShadowEffect.Color>
+				</local:ShadowEffect>
+			</Label.Effects>
+		</Label>
+	</Grid>    
