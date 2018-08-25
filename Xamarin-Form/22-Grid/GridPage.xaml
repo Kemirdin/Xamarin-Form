@@ -1,0 +1,29 @@
+   <Grid RowSpacing="5" ColumnSpacing="5" BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Image Source="unnamed.jpg" Grid.Row="0" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                
+            </Image>
+
+            <Image Source="unnamed.jpg" Grid.Row="0" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            </Image>
+
+            <Image Source="unnamed.jpg" Grid.Row="1" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            </Image>
+
+            <Image Source="unnamed.jpg" Grid.Row="1" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            </Image>
+
+        </Grid>
