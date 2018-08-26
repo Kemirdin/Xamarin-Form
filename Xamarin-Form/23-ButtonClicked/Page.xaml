@@ -1,0 +1,8 @@
+ <ContentPage.Content>
+        <!--<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                 
+            
+         <Button Text="When I Am Clicked" HorizontalOptions="Center" VerticalOptions="Center" 
+         Clicked="Button_Clicked"/>
+        </StackLayout>-->
+    </ContentPage.Content>
