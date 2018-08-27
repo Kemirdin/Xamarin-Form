@@ -1,0 +1,13 @@
+ <StackLayout>
+            <Image Source="unnamed.jpg" VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Image.GestureRecognizers>
+
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+
+                </Image.GestureRecognizers>
+            </Image>
+            
+            
+            
+        </StackLayout>
