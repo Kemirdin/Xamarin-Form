@@ -1,0 +1,10 @@
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"    
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
+            xmlns:mypages="clr-namespace:MyApp.Pages;assembly=MyApp"    
+            x:Class="MyApp.Pages.Navigation">    
+  <TabbedPage.Children>    
+    <mypages:Page1 Title="Page 1"/>    
+    <mypages:Page2 Title="Page 2"/>    
+    <mypages:Page3 Title="Page 3"/>    
+  </TabbedPage.Children>    
+</TabbedPage>  
