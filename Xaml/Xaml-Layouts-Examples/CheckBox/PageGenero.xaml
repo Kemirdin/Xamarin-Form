@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChecksYRadios.PageGenero"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             Title="Ejemplo de CheckBox">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Margin="20">
+            <controls:CheckBox x:Name="checkBoxGenero"
+                               CheckedText="Hombre"
+                               UncheckedText="Mujer"></controls:CheckBox>
+            <Image x:Name="imageGenero"></Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
