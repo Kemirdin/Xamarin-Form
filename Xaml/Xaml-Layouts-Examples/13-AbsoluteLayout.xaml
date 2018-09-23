@@ -1,0 +1,17 @@
+<AbsoluteLayout>  
+    <BoxView  
+        AbsoluteLayout.LayoutBounds="0,0,1,1"  
+        AbsoluteLayout.LayoutFlags="HeightProportional, WidthProportional"  
+        BackgroundColor="Black"></BoxView>  
+  
+    <BoxView   
+        AbsoluteLayout.LayoutBounds="0.5,0.5,100,100"   
+        AbsoluteLayout.LayoutFlags="XProportional,YProportional"   
+        BackgroundColor="Gray"></BoxView>  
+  
+    <Label Text="Get Started."   
+           AbsoluteLayout.LayoutBounds="0,1,1,40"   
+           AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional"  
+           BackgroundColor="Gray"></Label>  
+      
+</AbsoluteLayout>   
