@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             xmlns:local="clr-namespace:XamarinEssentials"  
+             x:Class="XamarinEssentials.MainPage">  
+  
+    <StackLayout>  
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">  
+         <Image Margin="0,50,0,0" x:Name="imgBanner" Source="banner.png" ></Image>  
+         <Image Margin="0,0,0,10" x:Name="imgXamarinEssential" Source="xamarinessential.png" ></Image>  
+         <Label Margin="0,0,0,10" FontAttributes="Bold" FontSize="Large" TextColor="#CA6F1E" HorizontalTextAlignment="Center" Text="Phone Dialer"></Label>  
+         <Entry x:Name="txtNumber" Placeholder="Enter Number"> </Entry>  
+         <Button x:Name="btnCall" Text="Call" Clicked="btnCall_Clicked"/>  
+        </StackLayout>  
+    </StackLayout>  
+  
+</ContentPage>  
