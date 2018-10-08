@@ -1,0 +1,14 @@
+<ListView x:Name="lst" ItemSelected="lst_ItemSelected">  
+      <ListView.ItemTemplate>  
+          <DataTemplate>  
+              <ViewCell>  
+                  <StackLayout>  
+                      <Label Text="{Binding .}"></Label>  
+                  </StackLayout>  
+                  <ViewCell.ContextActions>  
+                      <MenuItem Text="More" x:Name="More" Clicked="More_Clicked" CommandParameter="{Binding .}"></MenuItem>  
+                  </ViewCell.ContextActions>  
+              </ViewCell>  
+          </DataTemplate>  
+      </ListView.ItemTemplate>  
+  </ListView>
