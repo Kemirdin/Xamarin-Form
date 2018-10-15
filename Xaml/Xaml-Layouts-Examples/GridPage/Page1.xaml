@@ -15,7 +15,7 @@
 			<Label Text="Welcome to Daedalus Studio" 
 				FontSize="25" TextColor="White" 
 				HorizontalOptions="Center"/>
-			<Label Text="我是吳吉米"
+			<Label Text="我是TARZAN"
 				FontSize="18" TextColor="White" 
 				HorizontalOptions="End"/>
 		</StackLayout>
