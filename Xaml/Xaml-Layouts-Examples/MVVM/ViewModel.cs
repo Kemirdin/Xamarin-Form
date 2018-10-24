@@ -5,7 +5,8 @@ public class SessionViewModel {
 
     public ObservableCollection<Session> Sessions { get; set; }
 
-    public async Task LoadDataAsync () {
+    public async Task LoadDataAsync () 
+    {
         await Task.Run (() => {
             if (Sessions.Count == 0) {
                 var sessions = SessionsDataSource.GetSessions ();
