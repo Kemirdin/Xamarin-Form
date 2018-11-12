@@ -1,0 +1,26 @@
+<Style x:Key="BtnPrincipale" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#27A9E1" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="11" Tablet="16"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="WidthRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="250" Tablet="320"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="32" Tablet="50"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HorizontalOptions" Value="Center" />
+
+                <Setter Property="BorderRadius">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Int32" Phone="15" Tablet="25"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
