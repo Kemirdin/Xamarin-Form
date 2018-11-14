@@ -1,0 +1,47 @@
+ <primitives:RadExpander IsExpanded="{Binding Path=IsExpanded}"
+
+                                BorderColor="{Binding Path=BorderColor}"
+
+                                BorderThickness="{Binding Path=BorderThickness}"
+
+                                IsAnimationEnabled="{Binding Path=IsAnimationEnabled}"
+
+                                AnimationDuration="{Binding Path=AnimationDuration}"
+
+                                AnimationEasing="{Binding Path=AnimationEasing}"
+
+                                HeaderLocation="{Binding Path=HeaderLocation}"
+
+                                Margin="16, 16, 16, 0">
+
+            <primitives:RadExpander.Header>
+
+                <primitives:ExpanderHeader BorderColor="{Binding Path=BorderColor}"
+
+                                           BorderThickness="{Binding Path=BorderThickness}"
+
+                                           IndicatorLocation="{Binding Path=IndicatorLocation}"
+
+                                           IndicatorColor="{Binding Path=IndicatorColor}"
+
+                                           IndicatorFontFamily="{StaticResource IconsFont}"
+
+                                           IndicatorText="{Binding Path=IndicatorText}"
+
+                                           IndicatorFontSize="{Binding Path=IndicatorFontSize}"
+
+                                           IndicatorMargin="{Binding Path=IndicatorMargin}">
+
+                    <Label Text="Telerik UI for Xamarin" VerticalOptions="Center"/>
+
+                </primitives:ExpanderHeader>
+
+            </primitives:RadExpander.Header>
+
+            <primitives:RadExpander.Content>
+
+                <Label Margin="15" Text="Telerik controls for Xamarin.Forms enable developers to easily implement various functionalities in their Xamarin.Forms projects and achieve the same scenarios across platforms using a single shared C# code base" />
+
+            </primitives:RadExpander.Content>
+
+        </primitives:RadExpander>
