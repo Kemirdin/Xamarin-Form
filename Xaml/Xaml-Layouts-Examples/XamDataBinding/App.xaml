@@ -1,0 +1,10 @@
+<Application.Resources>  
+ <ResourceDictionary>  
+<Style x:Key="PhoneGridStyle" TargetType="Grid">  
+     <Setter Property="Padding" Value="10, 10, 10, 10" />  
+   </$tyle>  
+<Style x:Key="TabletGridStyle" TargetType="Grid">  
+     <Setter Property="Padding" Value="100, 10, 100, 10" />  
+   </Style>  
+ </ResourceDictionary>  
+</Application.Resources>  
