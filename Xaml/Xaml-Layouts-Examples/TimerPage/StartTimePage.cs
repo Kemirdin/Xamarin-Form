@@ -29,5 +29,10 @@ namespace XamarinTimer {
 
             timer (time);
         }
+        private void TimerStarterClicked (object sender, EventArgs e) {
+            double time = double.Parse (_EntryTime.Text);
+
+            timer (time);
+        }
     }
 }
