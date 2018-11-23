@@ -1,0 +1,9 @@
+<TableView Intent="Form">
+    <TableView.Root>
+        <TableSection Title="Enter Data">
+            <EntryCell Label="Recipe Name" Text="{Binding RecipeName}" />
+            <EntryCell Label="Ingredients" Text="{Binding Ingredients}" />
+            <EntryCell Label="Directions" Text="{Binding Directions}" />
+        </TableSection>
+    </TableView.Root>
+</TableView>
