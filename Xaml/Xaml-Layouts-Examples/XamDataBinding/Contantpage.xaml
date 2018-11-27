@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xaml2"
+             xmlns:generic="clr-namespace:System.Collections;assembly=mscorlib"
+             x:Class="Xaml2.ConstructorPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="RecipeNameLabel">Recipe Name</x:String>
+            <x:String x:Key="CookTimeLabel">Cook Time</x:String>
+            <x:String x:Key="IngredientsLabel">Ingredients</x:String>
+            <x:String x:Key="DirectionsLabel">Directions</x:String>
+            <x:String x:Key="NumberOfServingsLabel">Number of Servings</x:String>
+            <Thickness x:Key="PickerMargin">15,0</Thickness>
+
+            <local:AllServingOptions x:Key="servingOptions">
+                <x:Arguments>
+                    <x:Array x:Key="args" Type="{x:Type local:ServingOption}">
+                        
+                        <local:ServingOption x:Key="Individual">
+                            <x:Arguments>
+                                <x:String>Individual</x:String>
+                                <x:Int32>1</x:Int32>
+                            </x:Arguments>
+                        </local:ServingOption>  
+                        
+                        <local:ServingOption x:Key="FamilySized">
+                            <x:Arguments>
+                                <x:String>Family Sized</x:String>
+                                <x:Int32>4</x:Int32>
+                            </x:Arguments>
+                        </local:ServingOption>
+                        
+                        <local:ServingOption x:Key="Buffet">
+                            <x:Arguments>
+                                <x:String>Buffet</x:String>
+                                <x:Int32>12</x:Int32>
+                            </x:Arguments>
+                        </local:ServingOption>
+                        
+                    </x:Array>
+                </x:Arguments>
+            </local:AllServingOptions>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <TableView Intent="Form">
+        <TableView.Root>
+            <TableSection Title="Enter Data">
+                <EntryCell Label="{StaticResource RecipeNameLabel}"/>
+                <EntryCell Label="{StaticResource CookTimeLabel}" />
+                <EntryCell Label="{StaticResource IngredientsLabel}" />
+                <EntryCell Label="{StaticResource DirectionsLabel}" />
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Margin="{StaticResource PickerMargin}">
+                        <Label Text="{StaticResource NumberOfServingsLabel}" VerticalOptions="Center" />
+                        <Picker VerticalOptions="Center" HorizontalOptions="EndAndExpand" 
+                            ItemsSource="{StaticResource servingOptions}"
+                            ItemDisplayBinding="{Binding Description}" />
+                    </StackLayout>
+                </ViewCell>
+            </TableSection>
+        </TableView.Root>
+    </TableView>
+</ContentPage>
