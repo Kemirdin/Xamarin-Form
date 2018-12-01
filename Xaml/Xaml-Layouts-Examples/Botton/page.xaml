@@ -1,0 +1,2 @@
+<Button Text="Edit" TextColor="White" 
+    BackgroundColor="#065ec4" Clicked="recipeClicked"></Button>
