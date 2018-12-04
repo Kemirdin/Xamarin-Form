@@ -1,0 +1,20 @@
+<Grid RowSpacing="0" ColumnSpacing="0">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="100" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <BoxView Color="Lime" Grid.Column="0" Grid.Row="0" />
+    <BoxView Color="Purple" Grid.Column="0" Grid.Row="1" />
+    <BoxView Color="Aqua" Grid.Column="0" Grid.Row="2" 
+        Grid.ColumnSpan="2" />          
+    <Label Text="Hello!" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"
+        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"
+        BackgroundColor="Red" TextColor="White" />
+    <BoxView Color="Gray" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" />
+</Grid>
