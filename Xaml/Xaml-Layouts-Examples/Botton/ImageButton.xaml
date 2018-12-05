@@ -1,0 +1,25 @@
+<ImageButton Source="xamagon.png" 
+            BackgroundColor="Transparent"
+            WidthRequest="300"
+            HeightRequest="300"
+            FlexLayout.AlignSelf="Center"
+            FlexLayout.Grow="1"
+            Clicked="ImageButton_Clicked"
+            Aspect="AspectFit">
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="CommonStates">
+            <VisualState x:Name="Normal">
+                <VisualState.Setters>
+                    <Setter Property="Scale" Value="1"/>
+                </VisualState.Setters>
+            </VisualState>
+ 
+            <VisualState x:Name="Pressed">
+                <VisualState.Setters>
+                    <Setter Property="Scale" Value="0.8"/>
+                </VisualState.Setters>
+            </VisualState>
+ 
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+</ImageButton>
