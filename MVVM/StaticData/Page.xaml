@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true" 
+             x:Class="MyPickerMVVM.Views.HumanPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Margin="20">
+            <Label Text="List of Humans" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Picker Title="Select a HumanType" ItemsSource="{Binding Humans}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedHuman}" />
+            <Label Text="{Binding SelectedHuman.Name}" HorizontalOptions="Center" Style="{DynamicResource TitleStyle}" />
+            <Label Text="{Binding SelectedHuman.Location}" FontAttributes="Italic" HorizontalOptions="Center" />
+            <Image Source="{Binding SelectedHuman.ImageUrl}" HeightRequest="200" WidthRequest="200" HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding SelectedHuman.Details}" Style="{DynamicResource BodyStyle}" />
+        </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
