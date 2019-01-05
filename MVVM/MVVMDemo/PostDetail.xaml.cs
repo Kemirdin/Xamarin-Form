@@ -4,7 +4,6 @@ public partial class PostDetail : ContentPage {
     public PostDetail () {
         InitializeComponent ();
     }
-
     public PostDetail (Post post) {
         InitializeComponent ();
         postDetailViewModel = new PostDetailViewModel (post);
