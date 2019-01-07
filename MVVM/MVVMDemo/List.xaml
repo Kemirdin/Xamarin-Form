@@ -1,0 +1,4 @@
+<ListView ItemsSource="{x:Binding Posts}"
+        SelectedItem="{x:Binding SelectPost}"
+        VerticalOptions="FillAndExpand" CachingStrategy="RecycleElement"
+        ItemSelected="Handle_ItemSelected">
