@@ -1,4 +1,4 @@
-namespace ImageFilterSample.Controls {
+namespace Sample.Controls {
     public class HorizontalList : Grid, INotifyPropertyChanged {
         protected readonly ICommand SelectedCommand;
         protected readonly StackLayout ItemsStackLayout;
