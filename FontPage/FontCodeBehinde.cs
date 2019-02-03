@@ -1,6 +1,6 @@
 using Xamarin.Forms;
 
-namespace FontSample {
+namespace Font {
     public partial class FontSamplePage : ContentPage {
         public FontSamplePage () {
             InitializeComponent ();
