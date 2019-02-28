@@ -1,0 +1,11 @@
+   <signature:SignaturePadView x:Name="signaturePad"
+                                        BackgroundColor="White"
+                                        CaptionText="{Binding Path=Signed,
+                                                              StringFormat={i18n:Translate Confirm_lblSigned}}"
+                                        CaptionTextColor="Black"
+                                        Grid.Row="2"
+                                        PromptText="{Binding SignatureName,
+                                                             StringFormat={i18n:Translate Confirm_lblSignatureName}}"
+                                        PromptTextColor="Black"
+                                        SignatureLineColor="Black"
+                                        StrokeColor="Black"/> 
