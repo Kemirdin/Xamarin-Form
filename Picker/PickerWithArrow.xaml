@@ -1,0 +1,13 @@
+         <Grid>
+                <Picker
+                    x:Name="catPicker"
+                    Title="Select Type"/>
+                <Image
+                    Margin="5"
+                    HorizontalOptions="End"
+                    Source="down_arrow">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Arrow_OnTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
