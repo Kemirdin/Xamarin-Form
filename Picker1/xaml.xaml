@@ -1,0 +1,2 @@
+ <Picker ItemsSource="{Binding Languages}" ItemDisplayBinding="{Binding Name}" 
+SelectedItem="{Binding SelectedMotherTounge}"></Picker>
