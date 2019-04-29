@@ -8,7 +8,8 @@ using Xamarin.Forms.Xaml;
 
 namespace CustomNavigationBarSample {
     [XamlCompilation (XamlCompilationOptions.Compile)]
-    public partial class TitleImagePage : ContentPage {
+    public partial class Title
+    Page : ContentPage {
         public TitleImagePage () {
 
             CustomNavigationPage.SetTitleBackground (this, "icon");
